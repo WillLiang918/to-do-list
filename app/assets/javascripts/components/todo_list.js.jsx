@@ -60,17 +60,17 @@ var TodoDetailView = React.createClass({
 
     var body;
      if (this.state.expanded) {
-       body = <div>
-                <div>{this.props.todo.body}</div>
+       body = <div className="listBody">
                 <button className="deleteButton" data-id={this.props.todo.id} onClick={this.props.todoList.handleDestroy}>Delete</button>
+                <div>{this.props.todo.body}</div>
               </div>;
     }
 
     return (
       <div className="todoItem group">
+        <DoneButton todo={this.props.todo}/>
         <h3 className="group" onClick={this.toggleBody}>{this.props.todo.title}</h3>
         <div>{body}</div>
-        <DoneButton todo={this.props.todo}/>
       </div>
     );
   },
