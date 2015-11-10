@@ -1,0 +1,72 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+html, body, div, h1, h3, li, ul, section {
+  margin: 0;
+  border: 0;
+  padding: 0;
+
+  font: inherit;
+  text-decoration: inherit;
+  text-align: inherit;
+
+  color: inherit;
+  background: transparent;
+}
+
+.group:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+body {
+  font-family: futura;
+  text-align: center;
+  color: white;
+  background: black;
+}
+
+h1 {
+  font-size: 72px;
+  padding: 30px;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+form {
+  margin: 20px;
+}
+
+#content {
+  border: 5px solid purple;
+  width: 400px;
+  display: block;
+  margin: auto;
+}
+
+.todoItem {
+  padding: 10px;
+  text-align: left;
+}
+
+.doneButton {
+  float: left;
+  margin-top: 5px;
+}
+
+.deleteButton {
+  float: left;
+  margin-top: 5px;
+}
+
+input {
+  margin: 5px;
+}
+
+button {
+  background: yellow;
+  border-radius: 10px;
+}
